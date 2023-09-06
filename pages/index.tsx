@@ -1,13 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from 'next/image';
 import { JetBrains_Mono, Inter } from 'next/font/google';
 import { TwitterIcon } from '@/icons/twitter';
 import { GithubIcon } from '@/icons/github';
-import { SunIcon } from '@/icons/sun';
 import { ZalandoIcon } from '@/icons/zalando';
-import { useEffect, useRef, useState } from 'react';
-import { MoonIcon } from '@/icons/moon';
-import { useTheme } from '@/components/ThemeSwitch';
 import dynamic from 'next/dynamic';
 
 const ThemeSwitchButton = dynamic(() => import('@/components/ThemeSwitch'), { ssr: false });
@@ -22,7 +17,7 @@ export default function Home() {
     >
       <header className='flex items-center'>
         <img
-          className='rounded-full grayscale hover:filter-none'
+          className='rounded-full dark:grayscale dark:hover:filter-none'
           draggable='false'
           alt='Saiem Saeed'
           src='https://res.cloudinary.com/read-cv/image/upload/c_fill,h_92,w_92/dpr_1.0/v1/1/profilePhotos/WuSineU1QoZMajOofGs5xvO4dPw1/bc8304b0-4ebf-4c9f-a3e1-89e58d82d1c3.jpg?_a=ATO2BZS0'
@@ -35,14 +30,14 @@ export default function Home() {
               <a
                 target='_blank'
                 href='https://twitter.com/saiemsaeed'
-                className='hidden sm:flex text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background hover:bg-accent hover:text-accent-foreground rounded-md h-7 w-7 items-center justify-center p-0'
+                className='hidden sm:flex text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background hover:bg-foreground hover:text-background rounded-md h-7 w-7 items-center justify-center p-0'
               >
                 <TwitterIcon />
               </a>
               <a
                 target='_blank'
                 href='https://github.com/saiemsaeed'
-                className='hidden sm:flex text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background hover:bg-accent hover:text-accent-foreground rounded-md h-7 w-7 items-center justify-center p-0'
+                className='hidden sm:flex text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background hover:bg-foreground hover:text-background rounded-md h-7 w-7 items-center justify-center p-0'
               >
                 <GithubIcon />
               </a>
@@ -105,7 +100,7 @@ export default function Home() {
           <div className='space-y-2 py-2'>
             <p className='pb-2 sm:pb-0 '>
               <span>Email &#x23AF; </span>
-              <a href='https://x.com/saiemsaeed' target='_blank' className='text-muted-foreground'>
+              <a href='mailto:hello@saiem.pro' target='_blank' className='text-muted-foreground'>
                 hello@saiem.pro
               </a>
             </p>

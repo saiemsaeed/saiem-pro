@@ -51,7 +51,7 @@ const ThemeSwitch = () => {
       {isDarkTheme && (
         <button
           onClick={handleLightMode}
-          className='text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background hover:bg-accent hover:text-accent-foreground rounded-md flex h-7 w-7 items-center justify-center p-0'
+          className='text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background hover:bg-foreground hover:text-background rounded-md flex h-7 w-7 items-center justify-center p-0'
         >
           <SunIcon />
         </button>
@@ -59,7 +59,7 @@ const ThemeSwitch = () => {
       {!isDarkTheme && (
         <button
           onClick={handleDarkMode}
-          className='text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background hover:foreground hover:text-accent-foreground rounded-md flex h-7 w-7 items-center justify-center p-0'
+          className='text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background hover:bg-foreground hover:text-background rounded-md flex h-7 w-7 items-center justify-center p-0'
         >
           <MoonIcon />
         </button>
