@@ -1,5 +1,5 @@
-import { Html, Head, Main, NextScript } from 'next/document';
-import Script from 'next/script';
+import { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 export default function Document() {
   const setInitialTheme = `
@@ -17,15 +17,17 @@ export default function Document() {
 `;
 
   return (
-    <Html lang='en'>
+    <Html lang="en">
       <Head>
         <Script
-          id='theme'
-          strategy='beforeInteractive'
+          id="theme"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{ __html: setInitialTheme }}
         />
       </Head>
-      <body className={`bg-background text-foreground text-[0.9rem] antialiased `}>
+      <body
+        className={`bg-background text-foreground text-[0.9rem] antialiased `}
+      >
         <Main />
         <NextScript />
       </body>

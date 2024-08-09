@@ -11,9 +11,9 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-:root[class~='dark'] {
-  --background: hsl(240 10% 3.9%);
-  --foreground: hsl(0 0% 98%);
+:root[class~="dark"] {
+  --background: #1e1e1e;
+  --foreground: #d4d4d4;
   --muted-foreground: hsl(240 5% 64.9%);
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;
@@ -26,9 +26,9 @@ body {
 }
 
 .color-scheme-dark {
-  color-scheme: 'dark';
+  color-scheme: "dark";
 }
 
 .color-scheme-light {
-  color-scheme: 'light';
+  color-scheme: "light";
 }
